@@ -4,6 +4,9 @@
 language: python
 python: 3.5
 
+cache: 
+  - pip
+
 env:
   - TOXENV=py35
   - TOXENV=py34
