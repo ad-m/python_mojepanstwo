@@ -1,0 +1,40 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.11.1]
+    method: GET
+    uri: https://api-v3.mojepanstwo.pl/dane/twitter_accounts/?conditions[twitter_accounts.name]=Micha%C5%82%20Boni&limit=50&page=0
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6xWW2+bMBj9K5Wl9ikXDJibFE1q+7i+TdrDmCwDbuLUYAuboVDtv88O6domDmm1
+        vaDE/i7Hx+d88AzuiSai2NJSg+zHM2AVyAAMAjADldlR1CwD3TOtaYtJWYqu0cpsdi03Gxutpcry
+        Zb4kks1/BYtabKkkjdK9WEieLyvS0Hx5nJ8vxw61xMd1PldAlRtak5MiZ8CM0epc0cVWicYUXXNR
+        EI73TIRBBNMgta14tzYLNSs3hM8L0bB9f9FSkDUd5yNfIHs+YWvBWTkUBLdU95Rq0b/8AhlEMAi9
+        2WlKORCFJaNtr4YdPkQD34Nw7iVzP72CUYZQhnzgSOaiJJqZs2TAuT3CEZUUPaPVwHCrFTa1A5Ch
+        KHRkVPSRdFxj2YpHxqlViLMwaSxFkk90PVAAMj+AMPgIOpCFCKLzkbIddltSMmE0EEa+I/CNps8V
+        6YeaGVE8HWgI49hJgypbJieobUht2XmwIsk7D4b+1e2olAt84J4T1ezKzQGA77nu4QgsyJIkTS7f
+        F2Y1WVtc3sfkMEII0gkI78VjCEtjeD76r/Kt4kMvdin+HVbraLz38ztfy0ItTGK9XpSiNn/fptiZ
+        gGCSRggFfr58sLzHUQhxI9qa8MVWrj9y/69WiH0XtWsqMG1IwWl1gdBXux/dbeRNUMWZ0lbHrt5H
+        knmdIonv8sc4FV0IXxbeypVfEOrpcYxK48B1lZrVFA+isbW/k1aRfgrE3p0BMnPWC70pj3a8K4z1
+        9p0hhEnkKrqTY8H4E56zB4nSCbEXygzizgyZfXBgTOc6tkNKFqgXuYCeyP0g9P+i89+/f87AnW1k
+        AMzANyHMrDBu/sqaJ2VfUYryx395fX8pRVMxOwjVNbp1jsFrdL/aC+vaR3fIPBLfPHzP4r3hrGZ6
+        hbwbaU608m6wuTe6Gj9DlIH/BwAA//8DADO8SSSXCAAA
+    headers:
+      access-control-allow-credentials: ['true']
+      access-control-allow-origin: ['*']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['717']
+      content-type: [application/json; charset=UTF-8]
+      date: ['Sun, 11 Sep 2016 11:13:26 GMT']
+      keep-alive: ['timeout=5, max=100']
+      server: [Apache/2.2.22 (Ubuntu)]
+      vary: [Accept-Encoding]
+      x-powered-by: [PHP/5.3.10-1ubuntu3.18]
+    status: {code: 200, message: OK}
+version: 1

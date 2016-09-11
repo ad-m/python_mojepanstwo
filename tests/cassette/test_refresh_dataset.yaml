@@ -1,0 +1,158 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.11.1]
+    method: GET
+    uri: https://api-v3.mojepanstwo.pl/swagger.json
+  response:
+    body: {string: "{\n  \"swagger\": \"2.0\",\n  \"info\": {\n    \"title\": \"MojePanstwo
+        API\",\n    \"description\": \"Dowiedz si\u0119 jak uzyska\u0107 dost\u0119p
+        do najwi\u0119kszego zbioru otwartych danych w Polsce i jak zintegrowa\u0107
+        je w swojej aplikacji.\",\n    \"version\": \"2.0\",\n    \"contact\": {\n
+        \     \"url\": \"https://github.com/epforgpl/_mojePanstwo-API-Server/issues\"\n
+        \   }\n  },\n  \"externalDocs\": {\n    \"url\": \"https://mojepanstwo.pl/api\"\n
+        \ },\n  \"host\": \"api-v3.mojepanstwo.pl\",\n  \"schemes\": [\n    \"https\"\n
+        \ ],\n  \"produces\": [\n    \"application/json\"\n  ],\n  \"tags\": [\n    {\n
+        \     \"name\": \"bdl\",\n      \"description\": \"Przegl\u0105daj statystyki
+        GUS zebrane w Banku Danych Lokalnych\"\n    }\n  ],\n  \"parameters\": {\n
+        \   \"dataset\": {\n      \"name\": \"dataset\",\n      \"in\": \"path\",\n
+        \     \"description\": \"Nazwa zbioru danych, pe\u0142na lista dost\u0119pna
+        pod https://api-v3.mojepanstwo.pl/dane/zbiory\",\n      \"required\": true,\n
+        \     \"type\": \"string\",\n      \"enum\": [\n        \"bdl_wskazniki\",\n
+        \       \"bdl_wskazniki_grupy\",\n        \"bdl_wskazniki_kategorie\",\n        \"budzet_wydatki_czesci\",\n
+        \       \"budzet_wydatki_dzialy\",\n        \"budzet_wydatki_rozdzialy\",\n
+        \       \"coe_sittings\",\n        \"crawler_pages\",\n        \"crawler_sites\",\n
+        \       \"dotacje_ue\",\n        \"dzialania\",\n        \"dzielnice\",\n
+        \       \"faktury\",\n        \"gminy\",\n        \"gminy_okregi_wyborcze\",\n
+        \       \"handel_zagraniczny_towary\",\n        \"instytucje\",\n        \"kody_pocztowe\",\n
+        \       \"kody_pocztowe_ulice\",\n        \"kolej_linie\",\n        \"kolej_stacje\",\n
+        \       \"krakow_darczyncy\",\n        \"krakow_dzielnice_rady_posiedzenia\",\n
+        \       \"krakow_dzielnice_uchwaly\",\n        \"krakow_glosowania\",\n        \"krakow_glosowania_glosy\",\n
+        \       \"krakow_jednostki\",\n        \"krakow_komisje\",\n        \"krakow_komisje_posiedzenia\",\n
+        \       \"krakow_komisje_posiedzenia_punkty\",\n        \"krakow_oswiadczenia\",\n
+        \       \"krakow_pomoc_publiczna\",\n        \"krakow_posiedzenia\",\n        \"krakow_posiedzenia_punkty\",\n
+        \       \"krakow_rada_uchwaly\",\n        \"krakow_radni_dzielnic_glosy\",\n
+        \       \"krakow_umowy\",\n        \"krakow_urzednicy\",\n        \"krakow_zamowienia_publiczne\",\n
+        \       \"krakow_zarzadzenia\",\n        \"krs_osoby\",\n        \"krs_podmioty\",\n
+        \       \"krs_podmioty_zmiany\",\n        \"miejscowosci\",\n        \"msig\",\n
+        \       \"msig_dzialy\",\n        \"msig_zmiany\",\n        \"nik_raporty\",\n
+        \       \"nik_raporty_dokumenty\",\n        \"panstwa\",\n        \"patenty\",\n
+        \       \"poslowie\",\n        \"poslowie_biura\",\n        \"poslowie_biura_wydatki\",\n
+        \       \"poslowie_glosy\",\n        \"poslowie_oswiadczenia_majatkowe\",\n
+        \       \"poslowie_rejestr_korzysci\",\n        \"poslowie_wspolpracownicy\",\n
+        \       \"poslowie_wyjazdy\",\n        \"poslowie_wyjazdy_wydarzenia\",\n
+        \       \"powiaty\",\n        \"prawo\",\n        \"prawo_hasla\",\n        \"prawo_lokalne\",\n
+        \       \"prawo_powiazane\",\n        \"prawo_projekty\",\n        \"prawo_urzedowe\",\n
+        \       \"prawo_wojewodztwa\",\n        \"radni_dzielnic\",\n        \"radni_gmin\",\n
+        \       \"radni_gmin_oswiadczenia_majatkowe\",\n        \"rady_druki\",\n
+        \       \"rady_druki_dokumenty\",\n        \"rady_gmin\",\n        \"rady_gmin_debaty\",\n
+        \       \"rady_gmin_interpelacje\",\n        \"rady_gmin_wystapienia\",\n
+        \       \"rady_posiedzenia\",\n        \"rcl_etapy\",\n        \"sa_orzeczenia\",\n
+        \       \"sa_sedziowie\",\n        \"sejm_debaty\",\n        \"sejm_dezyderaty\",\n
+        \       \"sejm_druki\",\n        \"sejm_glosowania\",\n        \"sejm_interpelacje\",\n
+        \       \"sejm_interpelacje_pisma\",\n        \"sejm_kluby\",\n        \"sejm_komisje\",\n
+        \       \"sejm_komisje_opinie\",\n        \"sejm_komisje_uchwaly\",\n        \"sejm_komunikaty\",\n
+        \       \"sejm_posiedzenia\",\n        \"sejm_posiedzenia_punkty\",\n        \"sejm_wystapienia\",\n
+        \       \"senat_druki\",\n        \"senat_glosowania\",\n        \"senat_glosowania_glosy\",\n
+        \       \"senat_kluby\",\n        \"senat_posiedzenia\",\n        \"senat_rejestr_korzysci\",\n
+        \       \"senat_stenogramy\",\n        \"senatorowie\",\n        \"senatorowie_oswiadczenia_majatkowe\",\n
+        \       \"senatorowie_pracownicy\",\n        \"sn_orzeczenia\",\n        \"sn_sedziowie\",\n
+        \       \"sp_orzeczenia\",\n        \"sp_tezy\",\n        \"tematy\",\n        \"twitter\",\n
+        \       \"twitter_accounts\",\n        \"twitter_tags\",\n        \"umowy\",\n
+        \       \"urzednicy\",\n        \"urzednicy_rejestr_korzysci\",\n        \"urzedy_gmin\",\n
+        \       \"wojewodztwa\",\n        \"wybory_darczyncy\",\n        \"zamowienia_publiczne\",\n
+        \       \"zamowienia_publiczne_dokumenty\",\n        \"zamowienia_publiczne_wykonawcy\",\n
+        \       \"zamowienia_publiczne_zamawiajacy\",\n        \"zbiory\"\n      ]\n
+        \   }\n  },\n  \"paths\": {\n    \"/dane/{dataset}\": {\n      \"get\": {\n
+        \       \"summary\": \"Wyszukuj obiekty w danym zbiorze danych\",\n        \"tags\":
+        [\n          \"dane\"\n        ],\n        \"parameters\": [\n          {\n
+        \           \"$ref\": \"#/parameters/dataset\"\n          },\n          {\n
+        \           \"name\": \"conditions\",\n            \"in\": \"query\",\n            \"description\":
+        \"Warunki, kt\xF3re musz\u0105 by\u0107 spe\u0142nione na konkretnych polach,
+        np. 'conditions[imie]=Jan&conditions[nazwisko]=Kowalski'\",\n            \"required\":
+        false,\n            \"type\": \"array\",\n            \"items\": {\n              \"type\":
+        \"string\"\n            }\n          },\n          {\n            \"name\":
+        \"q\",\n            \"in\": \"query\",\n            \"description\": \"Pe\u0142notekstowe
+        wyszukiwanie (z odmian\u0105), np. ?q=epanstwo\",\n            \"required\":
+        false,\n            \"type\": \"string\"\n          },\n          {\n            \"name\":
+        \"order\",\n            \"in\": \"query\",\n            \"description\": \"Sortowanie
+        w formacie '<pole> (desc|asc)' po polach zawartych w 'data', np. ?order=poslowie.nazwisko
+        asc\",\n            \"required\": false,\n            \"type\": \"string\"\n
+        \         },\n          {\n            \"name\": \"page\",\n            \"in\":
+        \"query\",\n            \"description\": \"Numer strony wynik\xF3w do zwr\xF3cenia.
+        Mo\u017Cna si\u0119 tak\u017Ce pos\u0142u\u017Cy\u0107 linkami z sekcji Links
+        odpowiedzi\",\n            \"required\": false,\n            \"type\": \"integer\"\n
+        \         },\n          {\n            \"name\": \"limit\",\n            \"in\":
+        \"query\",\n            \"description\": \"Ilo\u015B\u0107 wynik\xF3w zwr\xF3conych
+        na stronie (domy\u015Blnie 50)\",\n            \"required\": false,\n            \"type\":
+        \"integer\"\n          }\n        ],\n        \"responses\": {\n          \"200\":
+        {\n            \"description\": \"Stronicowana lista obiekt\xF3w danego zbioru
+        danych spe\u0142niaj\u0105ca kryteria\",\n            \"schema\": {\n              \"$ref\":
+        \"#/definitions/DataobjectsList\"\n            }\n          }\n        }\n
+        \     }\n    },\n    \"/dane/{dataset}/{id}\": {\n      \"get\": {\n        \"summary\":
+        \"Pobierz dane konkretnego obiektu\",\n        \"tags\": [\n          \"dane\"\n
+        \       ],\n        \"parameters\": [\n          {\n            \"$ref\":
+        \"#/parameters/dataset\"\n          },\n          {\n            \"name\":
+        \"id\",\n            \"in\": \"path\",\n            \"description\": \"Unikalny
+        (w ramach tego zbioru danych) identyfikator obiektu\",\n            \"required\":
+        true,\n            \"type\": \"integer\"\n          },\n          {\n            \"name\":
+        \"layers\",\n            \"in\": \"query\",\n            \"description\":
+        \"Lista warstw, kt\xF3re powinny zosta\u0107 za\u0142adowane razem z obiektem.
+        Za\u0142aduj obiekt bez warstw, aby pozna\u0107 dost\u0119pne w tym zbiorze
+        warstwy\",\n            \"type\": \"array\",\n            \"collectionFormat\":
+        \"multi\",\n            \"items\": {\n              \"type\": \"string\"\n
+        \           }\n          }\n        ],\n        \"responses\": {\n          \"200\":
+        {\n            \"description\": \"Obiekt danych\",\n            \"schema\":
+        {\n              \"$ref\": \"https://api-v3.mojepanstwo.pl/schemas/dane/dataobject.json\"\n
+        \           }\n          },\n          \"404\": {\n            \"$ref\": \"#/responses/NotFound\"\n
+        \         }\n        }\n      }\n    }\n  },\n  \"responses\": {\n    \"418\":
+        {\n      \"description\": \"API Error\",\n      \"schema\": {\n        \"properties\":
+        {\n          \"code\": {\n            \"type\": \"string\",\n            \"description\":
+        \"Kod b\u0142\u0119du, unikalny dla ca\u0142ego API\"\n          },\n          \"params\":
+        {\n            \"type\": \"object\",\n            \"description\": \"Parametry
+        b\u0142\u0119du (niezale\u017Cne od j\u0119zyka, specyficzne dla danego kodu
+        b\u0142\u0119du)\"\n          },\n          \"message\": {\n            \"type\":
+        \"string\",\n            \"description\": \"Szczeg\xF3\u0142owy opis b\u0142\u0119du
+        po angielsku\"\n          }\n        }\n      }\n    },\n    \"NotFound\":
+        {\n      \"description\": \"Object not found.\"\n    }\n  },\n  \"definitions\":
+        {\n    \"DataobjectsList\": {\n      \"required\": [\"Dataobject\", \"Count\",
+        \"Took\", \"Links\"],\n      \"properties\": {\n        \"Dataobject\": {\n
+        \         \"type\": \"array\",\n          \"items\": {\n            \"$ref\":
+        \"https://api-v3.mojepanstwo.pl/schemas/dane/dataobject.json\"\n          }\n
+        \       },\n        \"Count\": {\n          \"type\": \"integer\",\n          \"description\":
+        \"Liczba wszystkich obiekt\xF3w pasuj\u0105cych do zapytania, kolejne strony
+        mo\u017Cna zwraca\u0107 zmieniaj\u0105c parametr page\"\n        },\n        \"Took\":
+        {\n          \"type\": \"integer\",\n          \"description\": \"D\u0142ugo\u015B\u0107
+        trwania zapytania w milisekundach\"\n        },\n        \"Links\": {\n          \"title\":
+        \"Links HATEOAS\",\n          \"properties\": {\n            \"self\": {\n
+        \             \"type\": \"string\",\n              \"format\": \"uri\",\n
+        \             \"description\": \"Link do bie\u017Cacej strony wynik\xF3w\"\n
+        \           },\n            \"first\": {\n              \"type\": \"string\",\n
+        \             \"format\": \"uri\",\n              \"description\": \"Link
+        do pierwszej strony wynik\xF3w\"\n            },\n            \"prev\": {\n
+        \             \"type\": \"string\",\n              \"format\": \"uri\",\n
+        \             \"description\": \"Link do poprzedniej strony wynik\xF3w\"\n
+        \           },\n            \"next\": {\n              \"type\": \"string\",\n
+        \             \"format\": \"uri\",\n              \"description\": \"Link
+        do nast\u0119pnej strony wynik\xF3w\"\n            },\n            \"last\":
+        {\n              \"type\": \"string\",\n              \"format\": \"uri\",\n
+        \             \"description\": \"Link do ostatniej strony wynik\xF3w\"\n            }\n
+        \         },\n          \"required\": [\"self\"]\n        }\n      }\n    }\n
+        \ }\n}"}
+    headers:
+      accept-ranges: [bytes]
+      access-control-allow-origin: ['*']
+      connection: [Keep-Alive]
+      content-length: ['9758']
+      content-type: [application/json]
+      date: ['Sun, 11 Sep 2016 11:25:32 GMT']
+      etag: ['"1eb10f-261e-528b9a6c337bb;51dd280dd05a6"']
+      keep-alive: ['timeout=5, max=100']
+      last-modified: ['Thu, 07 Jan 2016 07:45:15 GMT']
+      server: [Apache/2.2.22 (Ubuntu)]
+    status: {code: 200, message: OK}
+version: 1

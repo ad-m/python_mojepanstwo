@@ -1,0 +1,43 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.11.1]
+    method: GET
+    uri: https://api-v3.mojepanstwo.pl/dane/twitter_accounts/133
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6xVTXPbIBT8KxnOsSz0Ld3ae849VB0GSUTGRcAIVNXK5L8XJDuJbSwnM9VJwHvL
+        sux7vADagALAMASPoMEaK6LNWI9Ua9IjXNdi4FqZxaFnZmGntVRFuS23WNLNn9DrxJ5IzJUehSdZ
+        uW0wJ+X2Mr/cLjt0El3ifA1A1TvS4SuQG2SWaHUL1NsrwQ1oy0SFGZqViMIE5mFut2JDayY6Wu8w
+        21SC03l/0RNQ8IGxRS9QvFyp5TFaTxVGPdEjIVqMpz9QwBiGkf94nVJPWCFJST+q6YCO0SDwIdz4
+        2SbIH2BSxHERB8CRzESNNTVnKYBzeaEjGilGSpqJol4rZLBDUMRJ5MhoyDMemEayF8+UEesQJzDm
+        ViLJVnY9SgCKIIQw/Aw7UEQxjG9Hyn467HFNhfFAlASOwA+evgUyTh01pvh9lCFKU6cMqu6pXJGW
+        486q82RNUg4+jIKH74tT7uiBRoYVP9S7I4HAd93DBVlQZFme3b8vRDvcWl7+5+ywUAjzFQrn5jGC
+        5Sm8Hf3mfOv4yE9djj/jaisazfV8VteyUp5J7FqvFp0ZfkyxPSGGWZ7EcRiU2yere5pEEHHRd5h5
+        e9l+5v7fSyENXNK2RCDCccVIc0fQ93K/uNvEX5GKUaWtj117X1jmvYtkgas+lq7oYnia+GhXdseo
+        18cxLk1D11Vq2hE0CW6xf+Be4XGNxFydYWz6rB/5azU6sKEypTfvDCHMEhfoQS6A6Rdqzh4kyVfM
+        XinTiAfTZObg0BSd69gOK1mifuIiemX3o9H/i89fHwHDB9Ir+xy9PePLK2WumnPC1Gks59aw/Kuh
+        sh2umjPtlAH61rYzDFoCDZ6o0XwIUPin9Bewo3oO00JjNq90+C86ex+XkJ+/Xu33DwAA//8DAGHN
+        OiBqCAAA
+    headers:
+      access-control-allow-credentials: ['true']
+      access-control-allow-origin: ['*']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['690']
+      content-type: [application/json; charset=UTF-8]
+      date: ['Sun, 11 Sep 2016 11:13:26 GMT']
+      keep-alive: ['timeout=5, max=100']
+      server: [Apache/2.2.22 (Ubuntu)]
+      set-cookie: ['CAKEPHP=5dfm7i5g51bh706e64c91dsp15; expires=Sun, 11-Sep-2016 15:13:26
+          GMT; path=/; secure; HttpOnly']
+      vary: [Accept-Encoding]
+      x-es-took: ['11']
+      x-powered-by: [PHP/5.3.10-1ubuntu3.18]
+    status: {code: 200, message: OK}
+version: 1
