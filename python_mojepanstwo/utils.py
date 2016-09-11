@@ -1,4 +1,7 @@
-from urllib import quote
+try:  # Python 2.x
+    from urllib import quote
+except ImportError:
+    from urllib.parse import quote
 
 
 def urlencode_php(data):
