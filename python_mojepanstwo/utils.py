@@ -9,9 +9,9 @@ def urlencode_php(data):
     Convert a dict to a percent-encoded ASCII text string in PHP-like way.
     """
     output = []
-    for key, value in data.items():
+    for key, value in sorted(data.items()):
         if isinstance(value, dict):
-            for key2, value2 in value.items():
+            for key2, value2 in sorted(value.items()):
                 output.append("%s[%s]=%s" % (quote(str(key)),
                                              quote(str(key2)),
                                              quote(str(value2))))
