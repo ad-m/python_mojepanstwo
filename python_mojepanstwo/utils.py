@@ -15,8 +15,8 @@ def urlencode_php(data):
                 output.append("%s[%s]=%s" % (quote(str(key)),
                                              quote(str(key2)),
                                              quote(str(value2))))
-        elif isinstance(value, list):
-            for value in value:
+        elif isinstance(value, (list, tuple)):
+            for value2 in value:
                 output.append("%s[]=%s" % (quote(str(key)),
                                            quote(str(value2))))
         else:
