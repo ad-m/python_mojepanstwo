@@ -36,7 +36,7 @@ class TestPython_mojepanstwo(unittest.TestCase):
         client.DATASET_ENUM = []
         client.refresh_dataset()
         self.assertNotEqual(client.DATASET_ENUM, [])
-        self.assertIn('sejm_druki', client.DATASET_ENUM)
+        self.assertTrue('sejm_druki' in client.DATASET_ENUM)
 
 
 if __name__ == '__main__':
