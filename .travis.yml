@@ -23,9 +23,9 @@ script: tox -e ${TOXENV}
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
-  user: ad-m
+  user: adobrawy
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: SjeWb4k2oWFQXzYdIEkM4rmH4g/E1B4xd5OuENVLdvNFaXfjs2/NQVxNt8iXztI6jx8GhurVnu0WWwGLnzsdyp3l/OZ0iD9my8Iy7VqKYScz09ONhTgUeVTDe3jTKbEN2Ql+HDKamXmwUdyF2+mstWQsM8pVyHRUWUUSerbcWE97mPHi6PYCZ3oObPy8cJ2V0Qhic8fv50VWS41TaXfMgmbiYT6aOEVxTn5/DMaLlRshDsmttD1Fv3COkRtZHBpaX/0QxjrbqnAHxTIm4K2JZTGqWNrYeLrKmsujTyHFwLMYmBqoqZu4wxmysBN0b6uaqVTYUbTyubWZv7kp2VP2p7ocGZ2lGvNdmxHdJRU6OpgCoXd0iXNBVjJS6ZXO6/sa0Ve8wkNFgCu5oh+Zvvo2MCTL1SpokLIC85fxHvsNmMdtq7TfuEE3A9nT7DB3/RrMWdk1ZWJDV1a4lsc5w8zTB78Pd+NuPxktn09v0GcsmALusM6ou9uyIbsm4185+UszyXLLKuto/ohjvJAXIKXoCf1HWLkCM0a6R58bLqw4zBY2Y92GetA0NWcXKVsUN206Fx+B4DRDIclVH45Kl8FRrqAP+uz8lTrVF5qn/zB7FjlFpZgQgN8LbWSP2XViqY9w6Y2RmB69IevD9vSpNjPMPk94pII+e6bb8LbcdtmQ8Cc=
   on:
     tags: true
     repo: ad-m/python_mojepanstwo
