@@ -12,7 +12,7 @@ import sys
 import unittest
 from . import my_vcr
 
-from python_mojepanstwo import mojepanstwo
+from python_mojepanstwo.python_mojepanstwo import mojepanstwo
 
 
 class TestPython_mojepanstwo(unittest.TestCase):

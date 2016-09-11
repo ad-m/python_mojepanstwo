@@ -282,7 +282,8 @@ class DataobjectList(object):
         return inter(self)
 
     def _prev_or_next(self, prev_or_next):
-        return DataobjectList(json=self.client.get_url(url=self.json['Links'][prev_or_next]),
+        json = self.client.get_url(url=self.json['Links'][prev_or_next])
+        return DataobjectList(json=json,
                               client=self.client)
 
     def prev_page(self):
